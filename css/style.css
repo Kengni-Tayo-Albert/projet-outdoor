@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --para-color: red;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+/*---------------------------------- STYLISATION DU HEADER  ---------------------------------------*/
+
+.logo img {
+    width: 30%;
+
+}
+
+nav {
+    padding: 16px;
+}
+
+/* --- MENU --- */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    /*Espacement*/
+    list-style: none;
+}
+
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- BOUTON --- */
+.nav-btn {
+    background: #e3557f;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 750px;
+    color: white;
+
+}
+
+
+.wonder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+
+}
+
+header h2,
+header h1 {
+    text-align: center;
+}
+
+.wonder h2 {
+    font-size: 24px;
+}
+
+.wonder h1 {
+    font-size: 64px;
+}
+
+
+/*Utilisation de selecteur combiné pour ciblé l'élément p*/
+header p {
+    color: var(--para-color);
+}
+
+.btn-header {
+    background: #e3557f;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 12px;
+
+}
+
+.burger {
+    cursor: pointer;
+    background-color: #e3557f;
+    font-size: 30px;
+    margin-top: 10px;
+    position: absolute;
+    right: 32px;
+    display: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.citation {
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.citation img {
+    width: 64px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------- STYLISATION DE UPCOMING EVENTS  ---------------------------------------*/
+
+.upc {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.para-1 {
+    display: flex;
+    justify-content: center;
+    color: var(--para-color);
+}
+
+.vice-versa {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.vice-versa article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* width: 40%; */
+    padding: 20px;
+}
+
+.vice-versa article img {
+    width: 100%;
+}
+
+
+
+button {
+    background: #e3557f;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+button:hover {
+    background-color: #DA1C4B;
+}
+
+.btn-pad {
+    margin-bottom: 30px;
+}
+
+.para-1 {
+    margin-bottom: 30px;
+}
+
+.hiking {
+    box-shadow: 15px 15px 25px #e4e4e4;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------- STYLISATION DE EXPLORE  ---------------------------------------*/
+
+.explora1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/section-bg-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.explora2 {
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    margin-left: 50%;
+}
+
+
+.explore p {
+    width: 500px;
+}
+
+.para-2 {
+    color: var(--para-color);
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------- STYLISATION UPCOMING & DESTINATION  ---------------------------------------*/
+
+.upc-tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    /* pour centrer la boite à condition que la boite ne prenne pas toute la largeur */
+}
+
+
+
+.para-3 {
+    color: var(--para-color);
+}
+
+.upc-tours-1 {
+    padding: 40px;
+}
+
+.upc-tours-1 p {
+    margin-bottom: 20px;
+}
+
+.upc-tours-2 img {
+    width: 100%;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------- STYLISATION DU FOOTER  ---------------------------------------*/
+
+.footer {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 40px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------- RESPONSIVE DESIGN HOME PAGE  ---------------------------------------*/
+
+@media (max-width:768px) {
+    .navigation ul {
+        display: none;
+
+    }
+
+    .burger {
+        display: block;
+
+    }
+
+    .vice-versa {
+        flex-direction: column;
+    }
+
+    .upc-tours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wonder h1{
+        font-size: 30px;
+     }
+     .wonder h2{
+        font-size: 20px;
+     }
+     
+}
